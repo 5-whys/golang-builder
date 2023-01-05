@@ -30,3 +30,4 @@ jobs:
         project_path: "./cmd/cloudflared"
         binary_name: "cloudflared"
         release_name: "latest"
+        ldflags: "-w -s"
