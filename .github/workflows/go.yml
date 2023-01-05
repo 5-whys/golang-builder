@@ -25,6 +25,7 @@ jobs:
     - name: Cloning repo
       run: |
         git clone https://github.com/cloudflare/cloudflared
+        cd ./cloudflared
     - uses: wangyoucao577/go-release-action@v1.34
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
