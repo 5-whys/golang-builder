@@ -28,3 +28,5 @@ jobs:
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
         project_path: "./cmd/cloudflared"
+        binary_name: "cloudflared"
+        release_name: "latest"
