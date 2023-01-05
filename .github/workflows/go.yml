@@ -22,6 +22,5 @@ jobs:
     - name: Build
       run: |
         git clone https://github.com/cloudflare/cloudflared
-        ls ./cloudflared/
-        #   GOOS=linux GOARCH=mips 
-        #   go build -o /tmp/cloudflared -v -mod=vendor cloudflared
+        cd cloudflared
+        GOOS=linux GOARCH=mips go build -o /tmp/cloudflared -v -mod=vendor ./cmd/cloudflared
