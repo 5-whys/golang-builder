@@ -5,7 +5,9 @@ name: Go-build
 
 on:
   workflow_dispatch
-  
+  release:
+    types: [created]
+
 jobs:        
   releases-matrix:
     name: Release Go Binary
