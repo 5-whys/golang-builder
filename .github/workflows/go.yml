@@ -5,6 +5,8 @@ name: Go-build
 
 on: 
   workflow_dispatch:
+  schedule: 
+    - cron: 21 0 * * *
   release:
     types: [created]
 
@@ -33,5 +35,5 @@ jobs:
         ldflags: "-w -s"
         executable_compression: "upx -v"
         overwrite: true
-        release_name: "Releases"
+        release_name: "Release"
         
