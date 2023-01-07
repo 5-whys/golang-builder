@@ -4,6 +4,7 @@
 name: Go-build
 
 on: 
+  workflow_dispatch:
   release:
     types: [created]
 
@@ -31,4 +32,6 @@ jobs:
         binary_name: "cloudflared"
         ldflags: "-w -s"
         executable_compression: "upx -v"
+        overwrite: true
+        release_name: "Releases"
         
