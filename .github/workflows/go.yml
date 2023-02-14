@@ -30,10 +30,12 @@ jobs:
         goarch: ${{ matrix.goarch }}
         goversion: 1.19.5
         goamd64: v1
+        release_tag: latest
         project_path: "./cmd/cloudflared"
         binary_name: "cloudflared"
         ldflags: "-w -s"
         executable_compression: "upx --ultra-brute"
         overwrite: true
         release_name: "Release"
+        asset_name: ${BINARY_NAME}-${RELEASE_TAG}-${GOOS}-${GOARCH}
         
