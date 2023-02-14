@@ -37,5 +37,5 @@ jobs:
         executable_compression: "upx --ultra-brute"
         overwrite: true
         release_name: "Release"
-        asset_name: cloudflared-Release-${{ matrix.goos }}-${{ matrix.goarch }}
+        asset_name: cloudflared-latest-${{ matrix.goos }}-${{ matrix.goarch }}
         
