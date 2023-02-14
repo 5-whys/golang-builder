@@ -23,11 +23,12 @@ jobs:
       run: |
         rm -rf ./{,.[!.],..?}*
         git clone https://github.com/cloudflare/cloudflared .
-    - uses: wangyoucao577/go-release-action@v1.34
+    - uses: wangyoucao577/go-release-action@v1.35
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
+        goamd64: v1
         project_path: "./cmd/cloudflared"
         binary_name: "cloudflared"
         ldflags: "-w -s"
