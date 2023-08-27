@@ -31,6 +31,7 @@ jobs:
         goversion: 1.20.7
         goamd64: v1
         release_tag: latest
+        build_flags: "-a"
         project_path: "./cmd/cloudflared"
         binary_name: "cloudflared"
         ldflags: "-w -s"
