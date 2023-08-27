@@ -28,7 +28,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        goversion: 1.21.0
+        goversion: 1.20.7
         goamd64: v1
         release_tag: latest
         project_path: "./cmd/cloudflared"
