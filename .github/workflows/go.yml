@@ -28,7 +28,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        goversion: 1.20.11
         goamd64: v1
         release_tag: latest
         build_flags: "-a"
